@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Heebo:wght@100&family=Rubik:ital,wght@0,300;0,400;0,700;1,900&display=swap");
+$main-bg-color: #f5f7fb;
+$main-blue-bg: #4d5b9e;
+$mid-blue-bg: #808cc6;
+
+$light-blue-bg: #d6dbf5;
+$green-bg: #65d27c;
+$pink-bg: #f7d9db;
+
+$main-text: #2a2830;
+$light-blue-text: #29326487;
+$white-text-color: #f5f7fb;
+
+$btn-main: #2a2830;
+$btn-hover: #222225;
+$btn-click: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+$tablet: 795px;
+* {
+  margin: 0;
+  padding: 0;
+
+  //font-family: "Alef", sans-serif;
+  // font-family: "Heebo", sans-serif;
+  font-family: "Rubik", sans-serif;
+  direction: rtl;
+  box-sizing: border-box;
+  color: $main-text;
+}
+
+.red-alert {
+  color: rgb(163, 23, 23);
+  font-size: 14px;
+}
+
+.general-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 4rem;
+}

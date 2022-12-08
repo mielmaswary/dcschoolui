@@ -1,0 +1,40 @@
+.home-bg-img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/drive1.jpg");
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: rgb(2, 0, 36);
+  background: rgb(1, 0, 9);
+  background: rgb(1, 0, 9);
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    315deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(37, 34, 41, 1) 76%,
+    rgba(0, 0, 0, 1) 88%
+  );
+  color: wheat;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: wheat;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.207);
+    border-radius: 5px;
+  }
+}
