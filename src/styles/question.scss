@@ -1,4 +1,15 @@
 .course-video {
-  width: 50%;
-  height: auto;
+  width: 90%;
+  height: calc(0.5625 * 90vw);
+  @media (min-width: 1350px) {
+    width: 70%;
+    height: calc(0.5625 * 68vw);
+  }
+
+  @media (min-width: 1550px) {
+    width: 70%;
+    height: calc(0.5625 * 55vw);
+  }
+
+  margin: auto;
 }

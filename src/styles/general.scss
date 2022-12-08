@@ -42,7 +42,10 @@ $tablet: 795px;
 .main-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
   margin-top: 4rem;
+  padding: 5px;
+  max-width: 1350px;
 }
