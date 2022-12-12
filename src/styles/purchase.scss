@@ -15,17 +15,4 @@
     font-size: 20px;
     margin-right: 5px;
   }
-  button {
-    background-color: $main-text;
-    color: wheat;
-    font-size: 20px;
-    cursor: pointer;
-    &:hover {
-      background-color: $btn-hover;
-    }
-    &:active {
-      box-shadow: $btn-click;
-      font-size: 19px;
-    }
-  }
 }
