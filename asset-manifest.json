@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dcschoolui/static/css/main.d66a2ca3.css",
-    "main.js": "/dcschoolui/static/js/main.b659b066.js",
-    "static/media/course-bg.jpg": "/dcschoolui/static/media/course-bg.1afef5970770992eeb3e.jpg",
-    "static/media/drive1.jpg": "/dcschoolui/static/media/drive1.634dcff6554bbc413da5.jpg",
-    "static/media/dcschool-main-logo.png": "/dcschoolui/static/media/dcschool-main-logo.1f9ff5ed797ae6840546.png",
-    "index.html": "/dcschoolui/index.html",
-    "main.d66a2ca3.css.map": "/dcschoolui/static/css/main.d66a2ca3.css.map",
-    "main.b659b066.js.map": "/dcschoolui/static/js/main.b659b066.js.map"
+    "main.css": "/dcschoolui/home/static/css/main.5151fd41.css",
+    "main.js": "/dcschoolui/home/static/js/main.8e4ec6ed.js",
+    "static/media/course-bg.jpg": "/dcschoolui/home/static/media/course-bg.1afef5970770992eeb3e.jpg",
+    "static/media/drive1.jpg": "/dcschoolui/home/static/media/drive1.634dcff6554bbc413da5.jpg",
+    "static/media/dcschool-main-logo.png": "/dcschoolui/home/static/media/dcschool-main-logo.1f9ff5ed797ae6840546.png",
+    "index.html": "/dcschoolui/home/index.html",
+    "main.5151fd41.css.map": "/dcschoolui/home/static/css/main.5151fd41.css.map",
+    "main.8e4ec6ed.js.map": "/dcschoolui/home/static/js/main.8e4ec6ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.d66a2ca3.css",
-    "static/js/main.b659b066.js"
+    "static/css/main.5151fd41.css",
+    "static/js/main.8e4ec6ed.js"
   ]
 }
