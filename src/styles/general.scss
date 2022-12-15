@@ -16,7 +16,20 @@ $btn-main: #2a2830;
 $btn-hover: #222225;
 $btn-click: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 
+$red-alert: rgb(163, 23, 23);
+$green-alert: green;
+
 $tablet: 795px;
+body {
+  background: rgb(69, 62, 62);
+  background: linear-gradient(
+    90deg,
+    rgba(69, 62, 62, 1) 0%,
+    rgba(78, 73, 73, 1) 51%,
+    rgba(46, 43, 43, 1) 82%,
+    rgba(52, 47, 47, 1) 100%
+  );
+}
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +41,12 @@ $tablet: 795px;
   box-sizing: border-box;
   color: $main-text;
 }
-
+.white-text {
+  color: $white-text-color;
+}
+.text-align-center {
+  text-align: center;
+}
 .white-link {
   color: $white-text-color;
   font-weight: 200px;
@@ -41,7 +59,7 @@ $tablet: 795px;
   }
 }
 .red-alert {
-  color: rgb(163, 23, 23);
+  color: $red-alert;
   font-size: 14px !important;
 }
 

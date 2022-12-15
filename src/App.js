@@ -19,7 +19,7 @@ function App() {
   const [compenyId, setCompenyId] = useState(params.get("compenyId"));
 
   return (
-    <div className="main-container">
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home compenyId={compenyId} />} />
