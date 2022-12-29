@@ -1,19 +1,26 @@
 import React, { Fragment } from "react";
-
+import Button from "../components/Button";
 const Video = (props) => {
-  const { handleVideoEnds, handleVideoPlays, video_url } = props;
+  const { handleVideoEnds, handleVideoPlays, video_url, isVideoPlay } = props;
+  const playVideo = () => {
+    document.getElementById("video").play();
+  };
+
   return (
     <Fragment>
       <video
+        id="video"
         onPlay={handleVideoPlays}
         onEnded={handleVideoEnds}
         className="course-video"
-        autoPlay="autoplay"
-        controls
       >
         <source src={video_url} />
       </video>
-      <div className="question-text"> שאלת מבחן תופיע כאן בסוף הסרטון... </div>
+      {isVideoPlay ? (
+        <div className="question-text"> שאלת מבחן בסוף הסרטון... </div>
+      ) : (
+        <Button submitForm={playVideo} text={"הפעל סרטון"}></Button>
+      )}
     </Fragment>
   );
 };

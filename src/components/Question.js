@@ -11,6 +11,7 @@ const Question = (props) => {
   const [isEncorrectAnswerChosen, setIsEncorrectAnswerChosen] = useState(false);
   const correctAnswerId = answers.find((answer) => answer.is_correct === 1).id;
   const [isAnswerChosen, setIsAnswerChosen] = useState(false);
+  const [isVideoPlay, setIsVideoPlay] = useState(false);
 
   const handleAnswerClick = (e) => {
     setIsAnswerChosen(true);
@@ -48,10 +49,12 @@ const Question = (props) => {
   };
   const handleVideoEnds = () => {
     setIsShowQuiz(true);
+    setIsVideoPlay(false);
   };
 
   const handleVideoPlays = () => {
     setIsAnswerChosen(false);
+    setIsVideoPlay(true);
   };
   return (
     <Fragment>
@@ -75,6 +78,7 @@ const Question = (props) => {
               handleVideoEnds={handleVideoEnds}
               handleVideoPlays={handleVideoPlays}
               video_url={video_url}
+              isVideoPlay={isVideoPlay}
             />
           )}
         </div>
