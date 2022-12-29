@@ -13,7 +13,7 @@ import {
 export const LevelContext = React.createContext();
 
 const Course = (props) => {
-  const [level, setLevel] = useState(12);
+  const [level, setLevel] = useState(1);
   console.log(level);
 
   const questionsElements = props.questionsData.map((question) => {
