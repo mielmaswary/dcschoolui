@@ -26,7 +26,7 @@ const Home = (props) => {
     <>
       <div className="home-bg-img">
         <div>
-          <h2>{h2Text}</h2>
+          <h2>{h2Text}טטטטטטט</h2>
         </div>
         <DriverLogin isSubscribed={isSubscribed} />
         <div onClick={handleSwitchForms} className="white-link">
