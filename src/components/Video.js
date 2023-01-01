@@ -18,7 +18,7 @@ const Video = (props) => {
         <source src={video_url} />
       </video>
       {isVideoPlay ? (
-        <div className="question-text"> שאלת מבחן בסוף </div>
+        <div className="question-text"> שאלת מבחן בסוף הסרטון</div>
       ) : (
         <Button submitForm={playVideo} text={"הפעל סרטון"}></Button>
       )}
