@@ -12,6 +12,7 @@ const Video = (props) => {
         id="video"
         onPlay={handleVideoPlays}
         onEnded={handleVideoEnds}
+        controls={false}
         className="course-video"
       >
         <source src={video_url} />
