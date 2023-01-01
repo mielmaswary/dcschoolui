@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import FormAlert from "../components/FormAlert";
@@ -27,7 +27,7 @@ const Purchase = (props) => {
   const [isValidName, setIsValidName] = useState(false);
   const [isValidQuestions, setIsValidQuestions] = useState(false);
   const [isValidMax_drivers, setIsValidMax_drivers] = useState(false);
-
+  let submitForm = undefined;
   const handleChange = (e) => {
     const { name, value, type, checked, id } = e.target;
 
@@ -100,14 +100,26 @@ const Purchase = (props) => {
       max_drivers: 0,
     });
   };
-  const submitForm = (e) => {
+
+  submitForm = (e) => {
     e.preventDefault();
+
+    console.log(formData);
+
     if (validtaeForm()) {
       resetFormValues();
       //  document.getElementById("purchase-form").reset();
-      console.log(formData);
+      const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      };
+      fetch("http://localhost:4000/companies/", requestOptions)
+        .then((response) => response.json())
+        .then((data) => console.log(data));
     } else console.log("not valid!");
   };
+
   return (
     <div>
       <Header />
