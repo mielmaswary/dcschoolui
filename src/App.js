@@ -8,7 +8,7 @@ import Purchase from "./pages/Purchase";
 import questionsData from "./data/questions";
 import answersData from "./data/answers";
 import About from "./pages/About";
-
+import LessonsManagement from "./pages/LessonsManagement";
 function App() {
   const windowUrl = window.location.search;
   const params = new URLSearchParams(windowUrl);
@@ -25,6 +25,10 @@ function App() {
         <Route path="/home" element={<Home compenyId={compenyId} />} />
 
         <Route path="/admin" element={<Admin questions={questions} />} />
+        <Route
+          path="/admin/lessonsManagement"
+          element={<LessonsManagement />}
+        />
         <Route
           path="/course"
           element={

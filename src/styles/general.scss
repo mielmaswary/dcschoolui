@@ -6,6 +6,9 @@ $mid-blue-bg: #808cc6;
 $light-blue-bg: #d6dbf5;
 $green-bg: #65d27c;
 $pink-bg: #f7d9db;
+$red-bg: rgb(177, 21, 21);
+$orange-bg: rgb(219, 109, 13);
+$grey-bg: rgb(53, 48, 48);
 
 $main-text: #2a2830;
 $light-blue-text: #29326487;
@@ -95,4 +98,17 @@ button {
 }
 video {
   pointer-events: none;
+}
+
+.green-btn {
+  background-color: $green-bg;
+}
+.red-btn {
+  background-color: $red-bg;
+}
+.orange-btn {
+  background-color: $orange-bg;
+}
+.grey-btn {
+  background-color: $grey-bg;
 }
