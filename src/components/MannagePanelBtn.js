@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import AlertPopUpPopUp from "../components/AlertPopUp";
 const MannagePanelBtn = (props) => {
   let btncolor = "";
   switch (props.type) {
@@ -15,7 +15,21 @@ const MannagePanelBtn = (props) => {
     default:
       btncolor = "grey-btn";
   }
-  return <div className={`mannage-panel-btn ${btncolor}`}>{props.type}</div>;
+
+  const clickHandle = () => {
+    const lessonId = props.id;
+    fetch(`http://localhost:4000/lessons/${lessonId}`, { method: "DELETE" })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        props.setRender((prev) => prev + 1);
+      });
+  };
+  return (
+    <div className={`mannage-panel-btn ${btncolor}`} onClick={clickHandle}>
+      {props.type}
+    </div>
+  );
 };
 
 export default MannagePanelBtn;
